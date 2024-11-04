@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, Output} from '@angular/core';
 import {MatButton} from "@angular/material/button";
 
 @Component({
@@ -12,4 +12,5 @@ import {MatButton} from "@angular/material/button";
 })
 export class FieldComponent {
   @Input() value : number = 0;
+
 }
