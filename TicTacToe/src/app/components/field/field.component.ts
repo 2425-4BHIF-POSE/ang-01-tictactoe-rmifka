@@ -1,4 +1,4 @@
-import {Component, Input, Output} from '@angular/core';
+import {Component, input, Input, InputSignal, Output} from '@angular/core';
 import {MatButton} from "@angular/material/button";
 
 @Component({
@@ -11,6 +11,6 @@ import {MatButton} from "@angular/material/button";
   styleUrl: './field.component.scss'
 })
 export class FieldComponent {
-  @Input() value : number = 0;
+  value : InputSignal<number> = input.required();
 
 }
